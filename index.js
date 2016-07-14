@@ -119,7 +119,7 @@ function buildReqOpts() {
     var reqOpts = {
         ca:[],
         rejectUnauthorized: !config.vault.server["tls-skip-verify"],
-        followAllRedirects: false
+        followAllRedirects: true
     };
 
     if (config.vault.server["ca-path"]) {
